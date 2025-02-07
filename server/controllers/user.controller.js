@@ -17,8 +17,8 @@ const generateToken = async (userId,res) => {
     res.cookie("token", accessToken, {
         httpOnly: false,
         secure: process.env.NODE_ENV === "production", // HTTPS only in production
-        sameSite: "lax",
-        path: "/",
+        sameSite: "none",
+       
     });
 
     // await User.findByIdAndUpdate(userId,{accessToken}); 

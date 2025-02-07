@@ -46,7 +46,7 @@ app.use(fileUpload({
 connectDB()
 .then(()=>{
     app.listen(port,()=>{
-        console.log(`App is listening on port no : ${process.env.PORT}`)
+        // console.log(`App is listening on port no : ${process.env.PORT}`)
     })
 })
 .catch((err)=>{
